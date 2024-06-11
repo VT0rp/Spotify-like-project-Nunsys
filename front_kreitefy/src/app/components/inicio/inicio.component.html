@@ -1,0 +1,9 @@
+<div *ngIf="canciones">
+
+  <div class="d-flex justify-content-center flex-column align-items-center">
+    <h3 class="mt-2 mb-3 text-light">NOVEDADES</h3>
+    <section>
+      <img *ngFor="let cancion of canciones" [src]="cancion.image" alt="imagen cancion" (click)="goToFicha(cancion.id)">
+    </section>
+  </div>
+</div>

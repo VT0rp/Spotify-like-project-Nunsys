@@ -1,0 +1,6 @@
+<nav class="navbar navbar-light bg-light justify-content-between bg-dark text-light">
+  <a class="navbar-brand text-light" *ngIf="!valid"> </a>
+  <a class="navbar-brand ms-2 text-light" *ngIf="valid" [routerLink]='"/inicio"'>{{username}}</a>
+  <button *ngIf="valid" (click)="logOut()" class="btn btn-secondary me-1">LogOut</button>
+  <button *ngIf="!valid" (click)="logIn()" class="btn btn-secondary me-1">LogIn</button>
+</nav>

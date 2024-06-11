@@ -1,0 +1,25 @@
+<div class="container d-flex justify-content-center align-items-center flex-column mt-5" *ngIf="song">
+  <div class="card text-bg-dark" style="width: 18rem;">
+    <img class="card-img-top" [src]="song.image" alt="song image">
+    <div class="card-body">
+      <h5 class="card-title">{{song.name}}</h5>
+      <p class="card-text"><strong>{{song.artist}}</strong></p>
+      <button class="btn btn-success" (click)="addReproduction()"><fa-icon [icon]="faPlay"></fa-icon></button>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item text-bg-dark"><span>Album: </span>{{song.album}}</li>
+      <li class="list-group-item text-bg-dark"><span>Style: </span>{{song.style}}</li>
+      <li class="list-group-item text-bg-dark"><span>Duration: </span>{{song.duration}}</li>
+      <li class="list-group-item text-bg-dark"><span>Reproductions: </span>{{song.reproductions}}</li>
+      <li class="list-group-item text-bg-dark"><span>Stars: </span>{{song.estrellas}}
+        <select id="starSelection" (change)="setStars($event)" class="ms-3">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </li>
+
+    </ul>
+  </div>
+</div>

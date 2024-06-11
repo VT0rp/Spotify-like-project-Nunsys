@@ -1,0 +1,17 @@
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24%;
+  right: 10px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+fa-icon{
+}
+img{
+  width: 286px;
+  height: 161px;
+}
